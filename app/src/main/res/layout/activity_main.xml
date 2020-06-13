@@ -2,7 +2,9 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
-
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -46,6 +48,22 @@
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
             xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="@dimen/def_padding"
+            android:layout_margin="@dimen/def_padding"
+            card_view:cardCornerRadius="4dp">
+            <TextView
+                android:id="@+id/screnresolution"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/CustomText"
+                android:text="@{@string/screnresolution+@string/space+context.resources.displayMetrics.widthPixels+@string/cross+context.resources.displayMetrics.heightPixels}"
+                />
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
             android:layout_margin="@dimen/def_padding"
             android:layout_gravity="center"
             android:layout_width="match_parent"
@@ -57,7 +75,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             style="@style/CustomText"
-            android:text="@{`Screen Density (dpi dots per inch)`+context.resources.displayMetrics.density}"
+            android:text="@{@string/dpi+@string/space+context.resources.displayMetrics.density}"
             />
         </androidx.cardview.widget.CardView>
 
@@ -75,7 +93,7 @@
             style="@style/CustomText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@{`DensityDpi/PPI(Total dots) `+context.resources.displayMetrics.densityDpi}"
+            android:text="@{@string/totaldots+@string/space+context.resources.displayMetrics.densityDpi}"
             />
         </androidx.cardview.widget.CardView>
 
@@ -92,8 +110,11 @@
             style="@style/CustomText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@{`ScaledDensity(SP) `+context.resources.displayMetrics.scaledDensity}"
+            android:text="@{@string/sp+@string/space+context.resources.displayMetrics.scaledDensity}"
             />
     </androidx.cardview.widget.CardView>
     </LinearLayout>
+    </ScrollView>
+
+
 </layout>

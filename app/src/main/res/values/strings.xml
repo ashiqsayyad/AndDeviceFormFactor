@@ -3,5 +3,13 @@
     <string name="space">"  "</string>
     <string name="width">Width In Pixels</string>
     <string name="height">Height In Pixels</string>
+    <string name="dpi">Screen Density (dpi dots per inch)</string>
+    <string name="totaldots">DensityDpi/PPI(Total Dots)</string>
+    <string name="sp">ScaledDensity(SP)</string>
+    <string name="screnresolution">Screen Resolution</string>
+    <string name="cross">*</string>
+
+
+
 
 </resources>
