@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">DeviceFormFactor</string>
+    <string name="space">"  "</string>
+    <string name="width">Width In Pixels</string>
+    <string name="height">Height In Pixels</string>
+
 </resources>

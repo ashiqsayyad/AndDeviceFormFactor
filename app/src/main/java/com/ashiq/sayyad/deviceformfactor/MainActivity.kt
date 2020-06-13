@@ -7,6 +7,8 @@ import com.ashiq.sayyad.deviceformfactor.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
+    //http://tips.androidgig.com/concat-two-strings-in-textview-using-databinding/
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         DataBindingUtil.setContentView<ActivityMainBinding>(this,R.layout.activity_main)
